@@ -25,14 +25,11 @@ const links = [
 
 export default function Nav () {
 
-  const [drawerClosing, setDrawerClosing] = useState(false);
   const [drawerOpen, setDrawer] = useState(false);
 
   const handleDrawerClose = () => {
-    setDrawerClosing(true)
     setTimeout(() => {
       setDrawer(false);
-      setDrawerClosing(false);
     }, 500);
   }
 
@@ -42,7 +39,7 @@ export default function Nav () {
         <div className={'h-[75px] bg-primary flex items-center shadow justify-between px-4 lg:px-8 py-2 text-white '}>
           <div className=" items-center">KERRS</div>
           <div className={'hidden flex-1 md:flex justify-center items-center text-sm lg:text-base'}>
-            { links.map((link, index) =>
+            { links.map((link) =>
               <Link
                 href={link.url}
                 key={link.url}
