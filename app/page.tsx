@@ -16,6 +16,19 @@ export default function HomePage() {
           <Image src={bannerImage} alt="Hero" className="mx-auto rounded-lg shadow-lg" />
         </div>
       </section>
+      
+            {/* Donation */}
+            <section className="bg-gray-100 py-8 px-6 text-center">
+        <h2 className="text-3xl font-semibold text-primary">Support Our Mission</h2>
+        <p className="mt-4 text-text max-w-2xl mx-auto">
+          Your donation helps provide essential educational resources, technology, and training for students in rural Kenya. Together, we can make a lasting impact on their future.
+        </p>
+        <div className="mt-6">
+        <a href="https://givebutter.com/IM1HHL" target="_blank" rel="noopener noreferrer" ><button className="bg-accent hover:bg-yellow-500 text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+            Donate Now
+          </button></a>
+        </div>
+      </section>
 
       {/* Education Importance Section */}
       <section className="grid md:grid-cols-2 gap-8 items-center">
@@ -31,8 +44,10 @@ export default function HomePage() {
         <Image src={readingImage} alt="Education" className="rounded-lg shadow-lg" />
       </section>
 
+
+
       {/* Kenya's Educational Challenges */}
-      <section className="bg-gray-100 md:p-8 rounded-lg">
+      <section className="bg-gray-100  rounded-lg">
         <h2 className="text-3xl font-semibold text-primary">Challenges in Rural Kenya</h2>
         <p className="mt-4 text-text">
           Although Kenya has made significant progress by making primary education free and compulsory, many underprivileged children in rural areas lack access to quality education due to poverty, inequitable school funding, and unstable political climates.
@@ -48,18 +63,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Donation */}
-      <section className="bg-gray-100 py-16 px-6 text-center">
-        <h2 className="text-3xl font-semibold text-primary">Support Our Mission</h2>
-        <p className="mt-4 text-text max-w-2xl mx-auto">
-          Your donation helps provide essential educational resources, technology, and training for students in rural Kenya. Together, we can make a lasting impact on their future.
-        </p>
-        <div className="mt-6">
-        <a href="https://givebutter.com/IM1HHL" target="_blank" rel="noopener noreferrer" ><button className="bg-accent hover:bg-yellow-500 text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-            Donate Now
-          </button></a>
-        </div>
-      </section>
+
 
       {/* KERRS Role Section */}
       <section className="grid md:grid-cols-2 gap-8 items-center">

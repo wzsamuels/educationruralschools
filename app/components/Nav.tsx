@@ -37,7 +37,7 @@ export default function Nav () {
     <>
       <nav>
         <div className={'h-[75px] bg-primary flex items-center shadow justify-between px-4 lg:px-8 py-2 text-white '}>
-          <div className=" items-center">KERRS</div>
+          <div className=" items-center text-lg font-bold">KERRS</div>
           <div className={'hidden flex-1 md:flex justify-center items-center text-sm lg:text-base'}>
             { links.map((link) =>
               <Link
@@ -58,34 +58,34 @@ export default function Nav () {
       </nav>
 
       {/* Side Drawer */}
-<div
-  onClick={handleDrawerClose}
-  className={`fixed text-white z-40 w-screen h-screen transition-opacity duration-500 
-              ${drawerOpen ? 'opacity-100 bg-[rgba(0,0,0,0.4)]' : 'opacity-0 pointer-events-none'}`}
->
-  <div
-    className={`fixed z-10 right-0 top-0 bg-gray-900 h-full w-[220px] 
-                transition-transform duration-500 ease-in-out shadow-lg
-                ${drawerOpen ? 'translate-x-0' : 'translate-x-full'}`}
-  >
-    <div className="flex justify-between h-[75px] pl-3.5 bg-green">
-      <Link href={`/`} className={'flex items-center font-bold text-lg'}>KERRS</Link>
-      <button aria-label="Close Menu" onClick={handleDrawerClose}>
-        <IoMenuSharp className={'w-6 h-6 mr-6 '}/>
-      </button>
-    </div>
-
-    {links.map(link => (
-      <Link
-        href={link.url}
-        key={link.url}
-        className="w-full px-4 py-3 float-left hover:text-highlight"
+      <div
+        onClick={handleDrawerClose}
+        className={`fixed text-white z-40 w-screen h-screen transition-opacity duration-500 
+                    ${drawerOpen ? 'opacity-100 bg-[rgba(0,0,0,0.4)]' : 'opacity-0 pointer-events-none'}`}
       >
-        {link.text}
-      </Link>
-    ))}
-  </div>
-</div>
+        <div
+          className={`fixed z-10 right-0 top-0 bg-gray-900 h-full w-[220px] 
+                      transition-transform duration-500 ease-in-out shadow-lg
+                      ${drawerOpen ? 'translate-x-0' : 'translate-x-full'}`}
+        >
+          <div className="flex justify-between h-[75px] pl-3.5 bg-green">
+            <Link href={`/`} className={'flex items-center font-bold text-lg'}>KERRS</Link>
+            <button aria-label="Close Menu" onClick={handleDrawerClose}>
+              <IoMenuSharp className={'w-6 h-6 mr-6 '}/>
+            </button>
+          </div>
+
+          {links.map(link => (
+            <Link
+              href={link.url}
+              key={link.url}
+              className="w-full px-4 py-3 float-left hover:text-highlight"
+            >
+              {link.text}
+            </Link>
+          ))}
+        </div>
+      </div>
     </>
   )
 }
