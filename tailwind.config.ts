@@ -12,6 +12,7 @@ export default {
         primary: '#1E3A8A', // Deep Blue
         secondary: '#047857', // Emerald Green
         accent: '#F97316', // Soft Orange
+        accent2: '#9E2972',
         background: '#F3F4F6', // Light Gray
         text: '#1F2937', // Charcoal Black
         highlight: '#FACC15', // Warm Yellow
