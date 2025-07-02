@@ -5,7 +5,7 @@ interface CaptionProps {
 
 const Caption: React.FC<CaptionProps> = ({ text, className = "" }) => {
   return (
-    <p className={`mt-2 text-sm md:text-base text-gray-600 text-center md:text-left ${className}`}>
+    <p className={`mt-2 text-xs  md:text-sm text-gray-600 text-center w-full ${className}`}>
       {text}
     </p>
   );

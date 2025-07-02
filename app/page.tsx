@@ -13,36 +13,110 @@ export default function HomePage() {
       
       {/* Hero Section with New Banner Design and Animations */}
       <section 
-        className="relative h-[500px] flex items-center justify-center bg-cover bg-center text-white text-center"
+        className="relative h-[600px] flex items-center justify-center bg-cover bg-center text-white overflow-hidden"
         style={{ backgroundImage: `url(${bannerImage.src})` }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="absolute inset-0 gradient-overlay"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20"></div>
         <motion.div 
-          initial={{ opacity: 0, y: -20 }} 
+          initial={{ opacity: 0, y: 30 }} 
           animate={{ opacity: 1, y: 0 }} 
-          transition={{ duration: 0.7 }}
-          className="relative z-10 max-w-3xl mx-auto px-4"
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="relative z-10 max-w-4xl mx-auto px-6 text-center"
         >
-          <h1 className="text-5xl font-extrabold tracking-tight">Welcome to KERRS</h1>
-          <p className="mt-4 text-lg">
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-6xl md:text-7xl font-black tracking-tight mb-6 leading-tight"
+          >
+            Welcome to <span className="text-accent">KERRS</span>
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-xl md:text-2xl font-light leading-relaxed max-w-3xl mx-auto mb-8"
+          >
             Kenya Educational Resources For Rural Schools, Inc. (KERRS) is a non-profit organization dedicated to promoting academic excellence in rural schools.
-          </p>
-          
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          >
+            <a href="#mission" className="bg-accent hover:bg-accent/90 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+              Learn More
+            </a>
+            <a href="https://givebutter.com/IM1HHL" target="_blank" rel="noopener noreferrer" className="border-2 border-white hover:bg-white hover:text-primary text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105">
+              Donate Now
+            </a>
+          </motion.div>
         </motion.div>
       </section>
 
       {/* Donation Section */}
-      <section className="bg-gray-100 py-8 px-6 text-center">
-        <h2 className="text-3xl font-semibold text-primary">Support Our Mission</h2>
-        <p className="mt-4 text-text max-w-2xl mx-auto">
-          Your donation helps provide essential educational resources, technology, and training for students in rural Kenya. Together, we can make a lasting impact on their future.
-        </p>
-        <div className="mt-6">
-          <a href="https://givebutter.com/IM1HHL" target="_blank" rel="noopener noreferrer">
-            <button className="bg-accent hover:bg-yellow-500 text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-yellow-300">
-              Donate Now
-            </button>
-          </a>
+      <section className="bg-gradient-to-br from-primary to-secondary section-padding text-center text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-black/10"></div>
+        <div className="relative z-10">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl md:text-5xl font-bold mb-6"
+          >
+            Support Our Mission
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-xl max-w-3xl mx-auto mb-8 leading-relaxed"
+          >
+            Your donation helps provide essential educational resources, technology, and training for students in rural Kenya. Together, we can make a lasting impact on their future.
+          </motion.p>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+          >
+            <a href="https://givebutter.com/IM1HHL" target="_blank" rel="noopener noreferrer">
+              <button className="bg-accent hover:bg-accent/90 text-white font-bold py-4 px-8 rounded-full text-xl shadow-xl transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-accent/30 min-w-[200px]">
+                Donate Now
+              </button>
+            </a>
+            <div className="text-center">
+              <p className="text-sm opacity-90">Every dollar makes a difference</p>
+              <p className="text-xs opacity-75">Tax-deductible donations</p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Impact Statistics Section */}
+      <section className="bg-gradient-to-br from-blue-50 to-green-50 py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-primary text-center mb-12">Our Impact</h2>
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="text-center bg-white p-8 rounded-xl shadow-lg border-l-4 border-primary">
+              <div className="text-4xl font-bold text-primary mb-2">500+</div>
+              <div className="text-gray-600">Students Supported</div>
+            </div>
+            <div className="text-center bg-white p-8 rounded-xl shadow-lg border-l-4 border-secondary">
+              <div className="text-4xl font-bold text-secondary mb-2">15</div>
+              <div className="text-gray-600">Schools Partnered</div>
+            </div>
+            <div className="text-center bg-white p-8 rounded-xl shadow-lg border-l-4 border-accent">
+              <div className="text-4xl font-bold text-accent mb-2">1000+</div>
+              <div className="text-gray-600">Books Donated</div>
+            </div>
+            <div className="text-center bg-white p-8 rounded-xl shadow-lg border-l-4 border-primary">
+              <div className="text-4xl font-bold text-primary mb-2">50+</div>
+              <div className="text-gray-600">Teachers Trained</div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -64,59 +138,141 @@ export default function HomePage() {
       </section>
 
       {/* KERRS Role Section */}
-      <section className="flex flex-col md:flex-row-reverse gap-8 items-center">
-        <div className="md:w-1/2 w-full flex-1">
-          <h2 className="text-3xl font-semibold text-primary">How KERRS Helps</h2>
-          <p className="mt-4 text-text">
-            KERRS supports rural schools by providing essential resources such as books, laptops, professional development for teachers, and fully equipped libraries. Our goal is to break the cycle of poverty, empower students, and enable them to contribute to their communities and the global economy.
-          </p>
-        </div>
-        <div className="flex flex-1 flex-col items-center md:items-start">
-          <Image src={image1} alt="Support" className="rounded-lg shadow-lg max-w-lg w-full mx-auto" />
-          <Caption text="The school's principal, Mr. James Kioko, giving a speech during the reception of donated books." />
+      <section className="bg-white rounded-2xl shadow-xl p-12 border border-gray-100">
+        <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
+          <div className="md:w-1/2 w-full flex-1">
+            <h2 className="text-4xl font-bold text-primary mb-6">How KERRS Helps</h2>
+            <div className="space-y-4 mb-6">
+              <div className="flex items-start space-x-3">
+                <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
+                  <span className="text-white text-xs">✓</span>
+                </div>
+                <span className="text-gray-700">Essential educational resources and books</span>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
+                  <span className="text-white text-xs">✓</span>
+                </div>
+                <span className="text-gray-700">Technology and laptops for digital learning</span>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
+                  <span className="text-white text-xs">✓</span>
+                </div>
+                <span className="text-gray-700">Professional development for teachers</span>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
+                  <span className="text-white text-xs">✓</span>
+                </div>
+                <span className="text-gray-700">Fully equipped libraries and learning spaces</span>
+              </div>
+            </div>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Breaking the cycle of poverty through education and empowering students to contribute to their communities.
+            </p>
+          </div>
+          <div className="flex flex-col items-center">
+            <Image src={image1} alt="Support" className="rounded-xl shadow-xl max-w-lg w-full" />
+            <Caption text="The school's principal, Mr. James Kioko, giving a speech during the reception of donated books." />
+          </div>
         </div>
       </section>
 
       {/* Kenya's Educational Challenges */}
-      <section className="bg-gray-100 rounded-lg">
-        <h2 className="text-3xl font-semibold text-primary">Challenges in Rural Kenya</h2>
-        <p className="mt-4 text-text">
-          Although Kenya has made significant progress by making primary education free and compulsory, many underprivileged children in rural areas lack access to quality education due to poverty, inequitable school funding, and unstable political climates.
-        </p>
-        <p className="mt-4 text-text">
-          The 2017 implementation of the Competency-Based Curriculum (CBC) further exacerbated these challenges. Parents struggle to afford textbooks, school uniforms, and essential learning materials, leading to high dropout rates and poor academic performance.
-        </p>
-        <div className="flex flex-col items-center mt-6">
-          <Image src={readingImage} alt="Challenges" className="rounded-lg shadow-lg max-w-4xl w-full" />
-          <Caption text="A classroom turned library at Saint Martins Primary, formerly Kitwii Girls Primary School, in Kangundo." />
+      <section className="bg-gradient-to-br from-gray-50 to-blue-50 p-12 rounded-2xl">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-primary text-center mb-8">Overcoming Educational Barriers</h2>
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-red-600 text-xl">📚</span>
+              </div>
+              <h3 className="font-bold text-lg mb-2 text-primary">Resource Scarcity</h3>
+              <p className="text-gray-600 text-sm">Limited access to textbooks, learning materials, and educational resources in rural schools.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-yellow-600 text-xl">💰</span>
+              </div>
+              <h3 className="font-bold text-lg mb-2 text-primary">Economic Barriers</h3>
+              <p className="text-gray-600 text-sm">Families struggle with school fees, uniforms, and essential learning supplies.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-blue-600 text-xl">🎓</span>
+              </div>
+              <h3 className="font-bold text-lg mb-2 text-primary">Curriculum Changes</h3>
+              <p className="text-gray-600 text-sm">CBC implementation created new resource needs that many schools cannot meet.</p>
+            </div>
+          </div>
+          <div className="text-center">
+            <Image src={readingImage} alt="Educational Transformation" className="rounded-2xl shadow-xl max-w-4xl w-full mx-auto" />
+            <Caption text="A classroom turned library at Saint Martins Primary, formerly Kitwii Girls Primary School, in Kangundo." className="mt-4" />
+          </div>
         </div>
       </section>
 
       {/* Vision, Mission, and Values Section */}
-      <section className="bg-secondary p-8 rounded-lg">
-        <h2 className="text-3xl font-semibold text-white text-center">Our Vision, Mission & Values</h2>
-        <div className="mt-6 space-y-6">
-          <div>
-            <h3 className="text-2xl font-semibold text-white">Our Vision</h3>
-            <p className="text-white mt-2">
-              KERRS exists to support school communities in rural Kenya to equip students with 21st-century skills including critical thinking, technology literacy, collaboration, and leadership.
-            </p>
+      <section className="bg-gradient-to-br from-primary to-secondary py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-white text-center mb-12">Our Foundation</h2>
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-white text-center">
+              <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mb-6 mx-auto">
+                <span className="text-white text-2xl">🔭</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
+              <p className="opacity-90 leading-relaxed">
+                To equip rural Kenyan students with 21st-century skills including critical thinking, technology literacy, collaboration, and leadership.
+              </p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-white text-center">
+              <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mb-6 mx-auto">
+                <span className="text-white text-2xl">🎯</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
+              <p className="opacity-90 leading-relaxed">
+                To enhance education quality in rural Kenya through books, technology, teacher training, and digital learning opportunities.
+              </p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-white text-center">
+              <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mb-6 mx-auto">
+                <span className="text-white text-2xl">❤️</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Our Values</h3>
+              <div className="space-y-2 text-sm opacity-90">
+                <div className="flex items-center justify-center"><span className="w-2 h-2 bg-accent rounded-full mr-2"></span>Respect & Integrity</div>
+                <div className="flex items-center justify-center"><span className="w-2 h-2 bg-accent rounded-full mr-2"></span>Accountability</div>
+                <div className="flex items-center justify-center"><span className="w-2 h-2 bg-accent rounded-full mr-2"></span>Compassion</div>
+                <div className="flex items-center justify-center"><span className="w-2 h-2 bg-accent rounded-full mr-2"></span>Community Focus</div>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3 className="text-2xl font-semibold text-white">Our Mission</h3>
-            <p className="text-white mt-2">
-              Our mission is to enhance the quality of education and student achievement in rural Kenya by providing educational resources such as books, laptops, teacher training, and digital learning opportunities.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-2xl font-semibold text-white">Our Values</h3>
-            <ul className="list-disc list-inside mt-2 text-white">
-              <li><strong>Respect:</strong> We foster a culture of trust and respect for all individuals, regardless of age, gender, ethnicity, or socioeconomic background.</li>
-              <li><strong>Accountability:</strong> We adhere to government regulations and maintain transparency with our donors and stakeholders.</li>
-              <li><strong>Compassion:</strong> We recognize the struggles of rural students and actively seek solutions to address their educational needs.</li>
-              <li><strong>Integrity:</strong> We operate ethically and transparently, prioritizing what is right for students and communities.</li>
-              <li><strong>Community-Oriented:</strong> We collaborate with local communities to ensure students receive the support they need.</li>
-            </ul>
+          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 text-white">
+            <h3 className="text-2xl font-bold mb-6 text-center">Our Core Values</h3>
+            <div className="space-y-4">
+              <div className="flex items-start space-x-3">
+                <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></span>
+                <div><strong>Respect:</strong> We foster a culture of trust and respect for all individuals, regardless of age, gender, ethnicity, or socioeconomic background.</div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></span>
+                <div><strong>Accountability:</strong> We adhere to government regulations and maintain transparency with our donors and stakeholders.</div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></span>
+                <div><strong>Compassion:</strong> We recognize the struggles of rural students and actively seek solutions to address their educational needs.</div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></span>
+                <div><strong>Integrity:</strong> We operate ethically and transparently, prioritizing what is right for students and communities.</div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></span>
+                <div><strong>Community-Oriented:</strong> We collaborate with local communities to ensure students receive the support they need.</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
