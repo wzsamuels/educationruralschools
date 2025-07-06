@@ -41,7 +41,7 @@ export default function TeamPage () {
         <div className="max-w-4xl mx-auto px-6">
           <h1 className="text-5xl font-bold mb-6">Meet Our Team</h1>
           <p className="text-xl leading-relaxed opacity-90">
-            Dedicated leaders working together to transform education in rural Kenya through passion, expertise, and unwavering commitment.
+            A dedicated team is committed to making a real impact in the lives of underserved school children in rural areas. We collaborate closely with the community to form partnerships and nurture relationships that address educational needs in Kenya’s rural schools. Our volunteer teams on the ground, along with our organizational leadership, share a common vision of improving education quality and enhancing student performance in rural Kenya. We believe that, together, we can create lasting positive change.
           </p>
         </div>
       </section>
