@@ -6,7 +6,12 @@ export default function DonatePage() {
         <div className="max-w-4xl mx-auto px-6">
           <h1 className="text-5xl font-bold mb-6">Transform Lives Through Education</h1>
           <p className="text-xl leading-relaxed opacity-90">
-            Your donation directly impacts rural Kenyan students by providing essential educational resources and opportunities for a brighter future.
+            Every child deserves a quality education. Unfortunately, children in poor rural schools often lack access to well-equipped libraries and other educational resources that are essential for strong academic performance. This situation contributes to  the widening achievement gap between rural and urban schools, which receive government funding. Addressing this gap requires providing rural schools with books, textbooks, computers, and other necessary resources to support educational success.
+            <br /><br />
+            Every contribution can make a difference. Please consider donating to support this important initiative.
+<br/><br />
+Thank you for your consideration.
+
           </p>
         </div>
       </section>

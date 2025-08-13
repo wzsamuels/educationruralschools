@@ -1,5 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import volunteerImage from "@/public/volunteers/stephen.jpg";
 
 export default function VolunteerPage () {
   return (
@@ -58,12 +60,10 @@ export default function VolunteerPage () {
             <p className="text-gray-700 italic mb-6 leading-relaxed">
               Working with KERRS has been one of the most rewarding experiences of my life. Seeing the joy on children's faces when they receive new books is priceless.
             </p>
-            <div className="flex items-center">
-              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4">
-                SM
-              </div>
+            <div className="flex flex-col items-center">
+              
               <div>
-                <p className="font-bold text-primary">Sarah Mitchell</p>
+                <p className="font-bold text-primary">Mary Mbula</p>
                 <p className="text-sm text-gray-600">Volunteer Coordinator</p>
               </div>
             </div>
@@ -73,12 +73,18 @@ export default function VolunteerPage () {
             <p className="text-gray-700 italic mb-6 leading-relaxed">
               The dedication of the local teachers and the eagerness of the students to learn motivates me every day. This work truly makes a difference.
             </p>
-            <div className="flex items-center">
-              <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white font-bold mr-4">
-                JD
-              </div>
+            <div className="flex flex-col items-center">
+              <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-lg">
+                <Image
+                  src={volunteerImage}
+                  alt="Stephen Johnson"
+                  className="w-full h-full object-cover"
+                  width={128}
+                  height={128}
+                />
+                </div> 
               <div>
-                <p className="font-bold text-secondary">James Davis</p>
+                <p className="font-bold text-secondary">Stephen Muasya</p>
                 <p className="text-sm text-gray-600">Field Volunteer</p>
               </div>
             </div>

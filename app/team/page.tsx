@@ -4,10 +4,11 @@ import marvaImage from "@/public/team/marva.jpg";
 import beritahImage from "@/public/team/beritah.jpg";
 import joshuaImage from "@/public/team/joshua.jpg";
 import sheliaImage from "@/public/team/shelia.jpg";
+import maryImage from "@/public/team/mary.png";
 
 const team = [
   {
-    name: "Beritah Mutiso",
+    name: "Dr. Beritah Mutiso",
     role: "Founder & President",
     image: beritahImage,
   },
@@ -20,6 +21,11 @@ const team = [
     name: "Joshua Towet",
     role: "Vice President",
     image: joshuaImage,
+  },
+  {
+    name: "Mary Mbula",
+    role: "Teacher - Mususye Primary School",
+    image: maryImage,
   },
   {
     name: "Shelia Copeland",

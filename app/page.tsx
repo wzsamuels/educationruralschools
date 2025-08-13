@@ -114,7 +114,7 @@ export default function HomePage() {
             </div>
             <div className="text-center bg-white p-8 rounded-xl shadow-lg border-l-4 border-primary">
               <div className="text-4xl font-bold text-primary mb-2">50+</div>
-              <div className="text-gray-600">Teachers Trained</div>
+              <div className="text-gray-600">Teachers Empowered</div>
             </div>
           </div>
         </div>
@@ -138,7 +138,7 @@ export default function HomePage() {
       </section>
 
       {/* KERRS Role Section */}
-      <section className="bg-white rounded-2xl shadow-xl p-12 border border-gray-100">
+      <section className="bg-white rounded-2xl shadow-xl p-4 md:p-12 border border-gray-100">
         <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
           <div className="md:w-1/2 w-full flex-1">
             <h2 className="text-4xl font-bold text-primary mb-6">How KERRS Helps</h2>
