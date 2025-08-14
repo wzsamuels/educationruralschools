@@ -11,31 +11,37 @@ const team = [
     name: "Dr. Beritah Mutiso",
     role: "Founder & President",
     image: beritahImage,
+    text: "Beritah is an educator and volunteer facilitator for rural community development."
   },
     {
     name: "Professor Philliph Mutisya",
     role: "Board Chair",
     image: philipImage,
+    text: "Philliph is a retired university professor. He is a co-founder of Diaspora University in Kenya and a community development expert."
   },
   {
     name: "Joshua Towet",
     role: "Vice President",
     image: joshuaImage,
+    text: "Joshua is a financial counselor with a Bachelor of Science in Finance and Accounting from Maseno University in Kenya."
   },
   {
     name: "Mary Mbula",
     role: "Teacher - Mususye Primary School",
     image: maryImage,
+    text: "Mary is an educator and former Deputy Principal at St. Martins Primary School in Kangundo, Kenya."
   },
   {
     name: "Shelia Copeland",
     role: "Secretary",
     image: sheliaImage,
+    text: "Sheila works as an environmental services technician in a public school setting."
   },
   {
     name: "Marva Hicks-Daugherty",
     role: "Secretary",
     image: marvaImage,
+    text: "Marva is a retired university inventory management specialist and currently serves as an office administrator volunteer at Hunter's CNA Training Center."
   }
 ]
 
@@ -57,8 +63,8 @@ export default function TeamPage () {
         <h2 className="text-4xl font-bold text-primary text-center mb-12">Leadership Team</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {team.map((member, index) => (
-            <div key={index} className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 text-center hover:shadow-xl transition-all duration-300 hover:scale-105">
-              <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-lg">
+            <div key={index} className="group bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 text-center hover:shadow-xl transition-all duration-300">
+              <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-lg group-hover:scale-105 transition-transform duration-300">
                 <Image 
                   src={member.image} 
                   alt={member.name} 
@@ -68,8 +74,11 @@ export default function TeamPage () {
                 />
               </div>
               <h3 className="text-xl font-bold text-primary mb-2">{member.name}</h3>
-              <p className="text-gray-600 font-medium">{member.role}</p>
-              <div className="w-12 h-1 bg-accent rounded-full mx-auto mt-4"></div>
+              <p className=" font-medium mb-4">{member.role}</p>
+              <div className="w-12 h-1 bg-accent rounded-full mx-auto mb-4 group-hover:w-24 transition-all duration-300"></div>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {member.text}
+              </p>
             </div>
           ))}
         </div>

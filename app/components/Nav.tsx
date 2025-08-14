@@ -18,6 +18,10 @@ const links = [
     url: "/volunteers"
   },
   {
+    text: "Gallery",
+    url: "/gallery"
+  },
+  {
     text: "Donate",
     url: "/donate"
   }
