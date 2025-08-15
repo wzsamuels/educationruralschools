@@ -5,13 +5,14 @@ import beritahImage from "@/public/team/beritah.jpg";
 import joshuaImage from "@/public/team/joshua.jpg";
 import sheliaImage from "@/public/team/shelia.jpg";
 import maryImage from "@/public/team/mary.png";
+import stephenImage from "@/public/team/stephen.jpg";
 
 const team = [
   {
     name: "Dr. Beritah Mutiso",
     role: "Founder & President",
     image: beritahImage,
-    text: "Beritah is an educator and volunteer facilitator for rural community development."
+    text: "Beritah is an educator and volunteer facilitator for rural community development. Dr. Mutiso is an alumna of Kitwii Girls Primary School, now known as St. Martins Primary School."
   },
     {
     name: "Professor Philliph Mutisya",
@@ -32,8 +33,8 @@ const team = [
     text: "Mary is an educator and former Deputy Principal at St. Martins Primary School in Kangundo, Kenya."
   },
   {
-    name: "Shelia Copeland",
-    role: "Secretary",
+    name: "Sheila Copeland",
+    role: "Treasurer",
     image: sheliaImage,
     text: "Sheila works as an environmental services technician in a public school setting."
   },
@@ -41,7 +42,13 @@ const team = [
     name: "Marva Hicks-Daugherty",
     role: "Secretary",
     image: marvaImage,
-    text: "Marva is a retired university inventory management specialist and currently serves as an office administrator volunteer at Hunter's CNA Training Center."
+    text: "Marva is a retired university inventory management specialist and currently serves as an office administrator volunteer at a CNA Training Center."
+  },
+  {
+    name: "Stephen Muasya",
+    role: "Field Volunteer",
+    image: stephenImage,
+    text: "Stephen is an expert in client relations and  an experienced supermarket inventory management specialist in Kenya."
   }
 ]
 

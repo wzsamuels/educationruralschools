@@ -1,7 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import volunteerImage from "@/public/volunteers/stephen.jpg";
+import stephenImage from "@/public/team/stephen.jpg";
+import maryImage from "@/public/team/mary.png";
 
 export default function VolunteerPage () {
   return (
@@ -55,34 +56,46 @@ export default function VolunteerPage () {
       <section className="bg-white rounded-2xl shadow-xl p-12 border border-gray-100">
         <h2 className="text-4xl font-bold text-primary text-center mb-12">Volunteer Stories</h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8">
-            <div className="text-6xl text-accent mb-4">"</div>
-            <p className="text-gray-700 italic mb-6 leading-relaxed">
-              Working with KERRS has been one of the most rewarding experiences of my life. Seeing the joy on children's faces when they receive new books is priceless.
-            </p>
+          <div className="bg-gradient-to-br flex flex-col justify-between from-blue-50 to-purple-50 rounded-xl p-8">
+            <div>
+              <div className="text-6xl text-accent mb-4">"</div>
+              <p className="text-gray-700 italic mb-6 leading-relaxed">
+                Working with KERRS has been one of the most rewarding experiences of my life. Seeing the joy on children's faces when they receive new books is priceless.
+              </p>
+            </div>
             <div className="flex flex-col items-center">
-              
+              <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-lg">
+                <Image
+                  src={maryImage}
+                  alt="Mary Mbula"
+                  className="w-full h-full object-cover"
+                  width={128}
+                  height={128}
+                />
+              </div> 
               <div>
                 <p className="font-bold text-primary">Mary Mbula</p>
                 <p className="text-sm text-gray-600">Volunteer Coordinator</p>
               </div>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-8">
-            <div className="text-6xl text-accent mb-4">"</div>
-            <p className="text-gray-700 italic mb-6 leading-relaxed">
-              The dedication of the local teachers and the eagerness of the students to learn motivates me every day. This work truly makes a difference.
-            </p>
+          <div className="bg-gradient-to-br flex flex-col justify-between from-green-50 to-blue-50 rounded-xl p-8">
+            <div>
+              <div className="text-6xl text-accent mb-4">"</div>
+              <p className="text-gray-700 italic mb-6 leading-relaxed">
+                The dedication of the local teachers and the eagerness of the students to learn motivates me every day. This work truly makes a difference.
+              </p>
+            </div>
             <div className="flex flex-col items-center">
               <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-lg">
                 <Image
-                  src={volunteerImage}
-                  alt="Stephen Johnson"
+                  src={stephenImage}
+                  alt="Stephen Muasya"
                   className="w-full h-full object-cover"
                   width={128}
                   height={128}
                 />
-                </div> 
+              </div> 
               <div>
                 <p className="font-bold text-secondary">Stephen Muasya</p>
                 <p className="text-sm text-gray-600">Field Volunteer</p>
