@@ -64,15 +64,6 @@ export default function VolunteerPage () {
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-lg">
-                <Image
-                  src={maryImage}
-                  alt="Mary Mbula"
-                  className="w-full h-full object-cover"
-                  width={128}
-                  height={128}
-                />
-              </div> 
               <div>
                 <p className="font-bold text-primary">Mary Mbula</p>
                 <p className="text-sm text-gray-600">Volunteer Coordinator</p>
@@ -87,15 +78,6 @@ export default function VolunteerPage () {
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-lg">
-                <Image
-                  src={stephenImage}
-                  alt="Stephen Muasya"
-                  className="w-full h-full object-cover"
-                  width={128}
-                  height={128}
-                />
-              </div> 
               <div>
                 <p className="font-bold text-secondary">Stephen Muasya</p>
                 <p className="text-sm text-gray-600">Field Volunteer</p>
