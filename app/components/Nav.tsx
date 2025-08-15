@@ -18,8 +18,8 @@ const links = [
     url: "/volunteers"
   },
   {
-    text: "Gallery",
-    url: "/gallery"
+    text: "A Tribute",
+    url: "/tribute"
   },
   {
     text: "Donate",
