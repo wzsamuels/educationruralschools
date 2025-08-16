@@ -61,7 +61,7 @@ const galleryPhotos = [
   {
     src: gallery9,
     alt: "Book distribution",
-    caption: "tudents holding books with thumbs up, celebrating the donated books"
+    caption: "Students holding books with thumbs up, celebrating the donated books"
   },
   {
     src: gallery10,
