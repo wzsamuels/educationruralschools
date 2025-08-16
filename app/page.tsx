@@ -7,6 +7,8 @@ import image1 from "@/public/Picture2.png";
 import image3 from "@/public/Picture1.png";
 import Caption from "./components/Caption";
 
+
+
 export default function HomePage() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-12 space-y-14 bg-background text-text">
@@ -132,8 +134,8 @@ export default function HomePage() {
           </p>
         </div>
         <div className="flex flex-1 flex-col items-center md:items-start">
-          <Image src={image3} alt="Education" className="rounded-lg shadow-lg w-full max-w-lg mx-auto" />
-          <Caption text="Teachers at the library holding donated books." />
+          <Image src={image1} alt="Support" className="rounded-xl shadow-xl max-w-lg w-full" />
+          <Caption className="max-w-lg" text="The Saint Martin's Kitwii Primary School's principal, Mr. James Kioko, giving a speech during the reception of donated books in the presence of Dr. Mutiso's parents - Mr. Abraham & Elizabeth Mutiso, Dr. Mutiso's former primary school teachers, parents, teachers, students, clergy, and community leaders. " />        
         </div>
       </section>
 
@@ -173,8 +175,8 @@ export default function HomePage() {
             </p>
           </div>
           <div className="flex flex-col items-center">
-            <Image src={image1} alt="Support" className="rounded-xl shadow-xl max-w-lg w-full" />
-            <Caption text="The school's principal, Mr. James Kioko, giving a speech during the reception of donated books in the presence of Dr. Mutiso's parents, Mr. Abraham & Elizabeth Mutiso, Dr. Mutiso's former primary school teachers, parents, teachers, students, clergy, and community leaders. " />
+            <Image src={image3} alt="Education" className="rounded-lg shadow-lg w-full max-w-lg mx-auto" />
+          <Caption text="Teachers at the library holding donated books." />
           </div>
         </div>
       </section>
