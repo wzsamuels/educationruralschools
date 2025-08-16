@@ -40,7 +40,7 @@ export default function VolunteerPage () {
             <p className="text-gray-600 text-sm">Organizing events and providing operational assistance</p>
           </div>
           <div className="bg-white rounded-xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:scale-105">
-            <div className="text-4xl mb-4">🤝</div>
+            <div className="text-4xl mb-4">🫱🏿‍🫲🏻</div>
             <h3 className="text-lg font-bold text-primary mb-3">Direct Service</h3>
             <p className="text-gray-600 text-sm">Working directly with beneficiaries and local communities</p>
           </div>
