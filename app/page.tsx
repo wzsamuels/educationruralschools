@@ -109,7 +109,7 @@ export default function HomePage() {
               <div className="text-gray-600">Schools Partnered</div>
             </div>
             <div className="text-center bg-white p-8 rounded-xl shadow-lg border-l-4 border-accent">
-              <div className="text-4xl font-bold text-accent mb-2">1000+</div>
+              <div className="text-4xl font-bold text-accent mb-2">10,000+</div>
               <div className="text-gray-600">Books Donated</div>
             </div>
             <div className="text-center bg-white p-8 rounded-xl shadow-lg border-l-4 border-primary">
