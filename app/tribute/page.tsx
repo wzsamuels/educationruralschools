@@ -11,13 +11,17 @@ import gallery7 from "@/public/tribute/gallery-7.jpg";
 import gallery8 from "@/public/tribute/gallery-8.jpg";
 import gallery9 from "@/public/tribute/gallery-9.jpg";
 import gallery10 from "@/public/tribute/gallery-10.jpg";
+import gallery11 from "@/public/tribute/gallery-11.jpg";
+import gallery12 from "@/public/tribute/gallery-12.jpg";
+import gallery13 from "@/public/tribute/gallery-13.jpg";
+import gallery14 from "@/public/tribute/gallery-14.jpg";  
 import featuredImage from "@/public/tribute/anny.jpg";
 
 const galleryPhotos = [
   {
     src: gallery1,
     alt: "Book distribution",
-    caption: "Dr. Mutiso with the portion of the books assigned to Kitwii Girls"
+    caption: "Dr. Mutiso with the portion of the books assigned to Kitwii Girls (2017)"
   },
   {
     src: gallery2,
@@ -37,7 +41,7 @@ const galleryPhotos = [
   {
     src: gallery5,
     alt: "Book distribution to schools",
-    caption: "Volunteers unloading books"
+    caption: "Books in storage in Kenya"
   },
   {
     src: gallery6,
@@ -47,7 +51,7 @@ const galleryPhotos = [
   {
     src: gallery7,
     alt: "With volunteers",
-    caption: "Books in storage in Kenya"
+    caption: "Volunteers loading books"
   },
   {
     src: gallery8,
@@ -57,12 +61,32 @@ const galleryPhotos = [
   {
     src: gallery9,
     alt: "Book distribution",
-    caption: "Distributing books to students"
+    caption: "tudents holding books with thumbs up, celebrating the donated books"
   },
   {
     src: gallery10,
     alt: "Final farewell",
-    caption: "Parents at the donated books reception event"
+    caption: "Parents led by the school's principal, Mr. James Kioko, outside the new makeshift school library"
+  },
+  {
+    src: gallery11,
+    alt: "Books in storage",
+    caption: "Dr. Mutiso's former primary school teachers: 1st grade teacher, Mrs. John, 3rd grade teacher, Mrs. Kakindu Nzioki, and the school's principal at the time, Mr. Ndunda"
+  },
+  {
+    src: gallery12,
+    alt: "Books in transit",
+    caption: "Empowering teachers"
+  },
+  {
+    src: gallery13,
+    alt: "Books in transit",
+    caption: "Empowering teachers"  
+  },
+  {
+    src: gallery14,
+    alt: "Books in transit",
+    caption: "Students celebrating outside their new makeshift school library at the ground breaking event"
   }
 ];
 
@@ -83,6 +107,9 @@ export default function TributePage() {
           </p>
           <p>
             KERRS Inc., now a registered organization, honors you by continuing the mission you started. This page features photographs of the book loading process in the United States and you overseeing their distribution to various schools, reminding us that our acts of kindness can endure beyond our lifetimes.
+          </p>
+          <p>
+            Thank you for capturing the images and videos in Kenya, providing us with valuable memories. We are forever grateful for your contributions to the community.
           </p>
           <p>
             May the efforts of the KERRS' leadership team, our volunteers, and our valued donors leave a positive impact, influencing people and the world for the generations to come.
