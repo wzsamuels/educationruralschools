@@ -233,7 +233,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
               <p className="opacity-90 leading-relaxed">
-                To enhance education quality in rural Kenya through books, technology, teacher training, and digital learning opportunities.
+                To enhance education quality in rural Kenya through books, technology, teacher empowering, and digital learning opportunities.
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-white text-center">
