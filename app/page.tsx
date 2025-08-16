@@ -141,42 +141,44 @@ export default function HomePage() {
 
       {/* KERRS Role Section */}
       <section className="bg-white rounded-2xl shadow-xl p-4 md:p-12 border border-gray-100">
-        <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
-          <div className="md:w-1/2 w-full flex-1">
-            <h2 className="text-4xl font-bold text-primary mb-6">How KERRS Helps</h2>
-            <div className="space-y-4 mb-6">
-              <div className="flex items-start space-x-3">
-                <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
-                  <span className="text-white text-xs">✓</span>
+        <div className="flex flex-col md:flex-row-reverse gap-6 items-center">
+          <div className="md:w-1/2 w-full flex-1 ">
+            <h2 className="text-4xl font-bold text-primary mb-6 text-center">How KERRS Helps</h2>
+            <div className="space-y-4 mb-6 flex flex-col items-center">
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
+                    <span className="text-white text-xs">✓</span>
+                  </div>
+                  <span className="text-gray-700">Essential educational resources and books</span>
                 </div>
-                <span className="text-gray-700">Essential educational resources and books</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
-                  <span className="text-white text-xs">✓</span>
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
+                    <span className="text-white text-xs">✓</span>
+                  </div>
+                  <span className="text-gray-700">Technology and laptops for digital learning</span>
                 </div>
-                <span className="text-gray-700">Technology and laptops for digital learning</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
-                  <span className="text-white text-xs">✓</span>
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
+                    <span className="text-white text-xs">✓</span>
+                  </div>
+                  <span className="text-gray-700">Professional development for teachers</span>
                 </div>
-                <span className="text-gray-700">Professional development for teachers</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
-                  <span className="text-white text-xs">✓</span>
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
+                    <span className="text-white text-xs">✓</span>
+                  </div>
+                  <span className="text-gray-700">Fully equipped libraries and learning spaces</span>
                 </div>
-                <span className="text-gray-700">Fully equipped libraries and learning spaces</span>
               </div>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Breaking the cycle of poverty through education and empowering students to contribute to their communities.
+              </p>
             </div>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Breaking the cycle of poverty through education and empowering students to contribute to their communities.
-            </p>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-1 flex-col items-center">
             <Image src={image3} alt="Education" className="rounded-lg shadow-lg w-full max-w-lg mx-auto" />
-          <Caption text="Teachers at the library holding donated books." />
+            <Caption text="Teachers at the library holding donated books." />
           </div>
         </div>
       </section>
