@@ -96,7 +96,7 @@ export default function TeamPage () {
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-4xl font-bold mb-6">United in Purpose</h2>
           <p className="text-xl leading-relaxed opacity-90">
-            Our diverse team brings together expertise in education, community development, and organizational leadership to create lasting impact in rural Kenyan schools.
+            Our diverse team brings together expertise in education, community development, financial planning, public relations, and organizational leadership to create lasting impact in rural Kenyan schools.
           </p>
         </div>
       </section>
