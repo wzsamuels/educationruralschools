@@ -28,9 +28,9 @@ const team = [
   },
   {
     name: "Mary Mbula",
-    role: "Teacher - Mususye Primary School",
+    role: "Volunteer Coordinator",
     image: maryImage,
-    text: "Mary is an educator and former Deputy Principal at St. Martins Primary School in Kangundo, Kenya."
+    text: "Mary is a former Deputy Principal and currently works as a primary school teacher in Kenya."
   },
   {
     name: "Sheila Copeland",
