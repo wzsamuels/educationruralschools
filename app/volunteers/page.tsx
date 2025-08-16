@@ -77,7 +77,7 @@ export default function VolunteerPage () {
             </div>
             <div className="flex flex-col items-center">
               <div>
-                <p className="font-bold text-secondary">Stephen Muasya</p>
+                <p className="font-bold text-secondary">Stephen Muasya Mutiso</p>
                 <p className="text-sm text-gray-600">Field Volunteer</p>
               </div>
             </div>

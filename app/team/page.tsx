@@ -45,7 +45,7 @@ const team = [
     text: "Marva is a retired university inventory management specialist and currently serves as an office administrator volunteer at a CNA Training Center."
   },
   {
-    name: "Stephen Muasya",
+    name: "Stephen Muasya Mutiso",
     role: "Field Volunteer",
     image: stephenImage,
     text: "Stephen is an expert in client relations and  an experienced supermarket inventory management specialist in Kenya."
