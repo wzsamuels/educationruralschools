@@ -36,7 +36,7 @@ const team = [
     name: "Sheila Copeland",
     role: "Treasurer",
     image: sheliaImage,
-    text: "Sheila works as an environmental services technician in a public school setting."
+    text: "Sheila works as an environmental services technician in a public school setting, as well as a worship leader in her church."
   },
   {
     name: "Marva Hicks-Daugherty",
