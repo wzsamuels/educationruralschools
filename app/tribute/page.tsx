@@ -97,10 +97,10 @@ export default function TributePage() {
     <div className="max-w-6xl mx-auto px-6 py-12 bg-background text-text">
       {/* Tribute Message */}
       <section className="text-center mb-16">
-        <h1 className="text-4xl font-bold mb-8 text-primary">A Tribute to my dearest late sister Anny Mutindi Mutiso</h1>
+        <h1 className="text-4xl font-bold mb-8 text-primary">A Tribute to My Dearest Late Sister, Anny Mutindi Mutiso</h1>
         <div className="max-w-4xl mx-auto text-lg leading-relaxed space-y-6">
           <p>
-            Writing your name brings a sense of your presence, yet the reality is that you are no longer with us physically. Nevertheless, you remain in my heart. As I officially launch our organization's website, I want to share that you were the first face of KERRS, Inc. before it became an official organization.
+            Anny, you were more than a young sister to me, you were my best friend; I miss you very much. Writing your name brings a sense of your presence, yet the reality is that you are no longer with us physically. Nevertheless, you remain in my heart. As I officially launch our organization's website, I want to share that you were the first face of KERRS, Inc. before it became an official organization.
           </p>
           <p>
             You were a dedicated educator, viewing your teaching not merely as a job but as a calling. Your love for all students, regardless of their school locations, is exemplified in the image of you distributing books upon their arrival from the United States to various schools. Your smile reflected the joy you found in this work.
