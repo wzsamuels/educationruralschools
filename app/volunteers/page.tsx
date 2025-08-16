@@ -17,8 +17,6 @@ export default function VolunteerPage () {
         </div>
       </section>
 
-
-
       {/* What Our Volunteers Do */}
       <section className="bg-gray-50 rounded-2xl p-12">
         <h2 className="text-4xl font-bold text-primary text-center mb-8">What Our Volunteers Do</h2>

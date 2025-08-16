@@ -18,7 +18,7 @@ const links = [
     url: "/volunteers"
   },
   {
-    text: "A Tribute",
+    text: "Tribute",
     url: "/tribute"
   },
   {

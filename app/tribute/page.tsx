@@ -1,6 +1,75 @@
+"use client";
 import Image from "next/image";
+import { useState } from "react";
+import gallery1 from "@/public/tribute/gallery-1.jpg";
+import gallery2 from "@/public/tribute/gallery-2.jpg";
+import gallery3 from "@/public/tribute/gallery-3.jpg";
+import gallery4 from "@/public/tribute/gallery-4.jpeg";
+import gallery5 from "@/public/tribute/gallery-5.jpeg";
+import gallery6 from "@/public/tribute/gallery-6.jpg";
+import gallery7 from "@/public/tribute/gallery-7.jpeg";
+import gallery8 from "@/public/tribute/gallery-8.jpeg";
+import gallery9 from "@/public/tribute/gallery-9.jpeg";
+import gallery10 from "@/public/tribute/gallery-10.jpeg";
+import featuredImage from "@/public/tribute/anny.jpg";
+import { caption } from "framer-motion/client";
+
+const galleryPhotos = [
+  {
+    src: gallery1,
+    alt: "Book distribution",
+    caption: "Dr. Mutiso with the books ready to be shipped"
+  },
+  {
+    src: gallery2,
+    alt: "Book loading process", 
+    caption: "Loading books in the United States"
+  },
+  {
+    src: gallery3,
+    alt: "Books traveling to Kenya.",
+    caption: "Books on their way to Kenya"
+  },
+  {
+    src: gallery6,
+    alt: "With students",
+    caption: "Unloading books in Kenya."
+  },
+  {
+    src: gallery5,
+    alt: "Book distribution to schools",
+    caption: "Volunteers unloading books"
+  },
+  {
+    src: gallery4,
+    alt: "Educational work",
+    caption: "Distributing books"
+  },
+  {
+    src: gallery7,
+    alt: "With volunteers",
+    caption: "Books in storage in Kenya"
+  },
+  {
+    src: gallery8,
+    alt: "Community engagement",
+    caption: "Books arriving at the school"
+  },
+  {
+    src: gallery9,
+    alt: "Book distribution",
+    caption: "Distributing books to students"
+  },
+  {
+    src: gallery10,
+    alt: "Final farewell",
+    caption: "Parents with the books in Kenya"
+  }
+];
 
 export default function TributePage() {
+  const [lightboxImage, setLightboxImage] = useState<typeof galleryPhotos[0] | null>(null);
+
   return (
     <div className="max-w-6xl mx-auto px-6 py-12 bg-background text-text">
       {/* Tribute Message */}
@@ -32,69 +101,86 @@ export default function TributePage() {
       <section className="mb-16">
         <div className="relative w-full max-w-2xl mx-auto">
           <Image
-            src="/tribute/anny-featured.jpg"
+            src={featuredImage}
             alt="Anny Mutindi Mutiso"
             width={800}
             height={600}
             className="rounded-lg shadow-lg w-full h-auto"
           />
+          <p className="text-sm text-gray-600 text-center mt-2">Anny Mutindi Mutiso</p>
         </div>
       </section>
 
+      
+
       {/* Photo Gallery */}
       <section>
-        <h2 className="text-3xl font-bold text-center mb-12 text-primary">Photo Gallery</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-primary">Bringing Books to Kenya</h2>
+        <div className="w-full mb-12">
+        <div className="flex items-center justify-center">
+           <video width="320" height="400" controls preload="none" autoPlay muted className="w-full max-w-[800px] h-full">
+            <source src="tribute/video.mp4" type="video/mp4" />
+            <track
+              src="/path/to/captions.vtt"
+              kind="subtitles"
+              srcLang="en"
+              label="English"
+            />
+            Your browser does not support the video tag.
+          </video>
+                </div>
+      </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="relative aspect-square">
-            <Image
-              src="/tribute/gallery-1.jpg"
-              alt="Book distribution"
-              fill
-              className="rounded-lg shadow-md object-cover"
-            />
-          </div>
-          <div className="relative aspect-square">
-            <Image
-              src="/tribute/gallery-2.jpg"
-              alt="Book loading process"
-              fill
-              className="rounded-lg shadow-md object-cover"
-            />
-          </div>
-          <div className="relative aspect-square">
-            <Image
-              src="/tribute/gallery-3.jpg"
-              alt="School visit"
-              fill
-              className="rounded-lg shadow-md object-cover"
-            />
-          </div>
-          <div className="relative aspect-square">
-            <Image
-              src="/tribute/gallery-4.jpg"
-              alt="With students"
-              fill
-              className="rounded-lg shadow-md object-cover"
-            />
-          </div>
-          <div className="relative aspect-square">
-            <Image
-              src="/tribute/gallery-5.jpg"
-              alt="Book distribution to schools"
-              fill
-              className="rounded-lg shadow-md object-cover"
-            />
-          </div>
-          <div className="relative aspect-square">
-            <Image
-              src="/tribute/gallery-6.jpg"
-              alt="Educational work"
-              fill
-              className="rounded-lg shadow-md object-cover"
-            />
-          </div>
+          {galleryPhotos.map((photo, index) => (
+            <div key={index} className="relative">
+              <div 
+                className="relative aspect-square cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() => setLightboxImage(photo)}
+              >
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  fill
+                  className="rounded-lg shadow-md object-cover"
+                />
+              </div>
+              {photo.caption && (
+                <p className="text-sm text-gray-600 text-center mt-2">{photo.caption}</p>
+              )}
+            </div>
+          ))}
         </div>
       </section>
+
+      {/* Lightbox */}
+      {lightboxImage && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center z-50 p-4"
+          onClick={() => setLightboxImage(null)}
+        >
+          <button 
+            className="absolute top-4 right-4 hover:opacity-70 z-10 bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center"
+            onClick={(e) => { e.stopPropagation(); setLightboxImage(null); }}
+          >
+            <div className="relative w-4 h-4">
+              <div className="absolute top-1/2 left-0 w-full h-0.5 bg-white transform -translate-y-1/2 rotate-45"></div>
+              <div className="absolute top-1/2 left-0 w-full h-0.5 bg-white transform -translate-y-1/2 -rotate-45"></div>
+            </div>
+          </button>
+          <div className="relative max-w-4xl w-full" style={{ maxHeight: lightboxImage.caption ? 'calc(100vh - 8rem)' : 'calc(100vh - 2rem)' }}>
+            <Image
+              src={lightboxImage.src}
+              alt={lightboxImage.alt}
+              width={1200}
+              height={800}
+              className="max-w-full max-h-full object-contain"
+            />
+          </div>
+          {lightboxImage.caption && (
+            <p className="text-white text-center mt-4 px-4">{lightboxImage.caption}</p>
+          )}
+        </div>
+      )}
     </div>
   );
 } 
