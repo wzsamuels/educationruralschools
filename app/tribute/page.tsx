@@ -4,36 +4,35 @@ import { useState } from "react";
 import gallery1 from "@/public/tribute/gallery-1.jpg";
 import gallery2 from "@/public/tribute/gallery-2.jpg";
 import gallery3 from "@/public/tribute/gallery-3.jpg";
-import gallery4 from "@/public/tribute/gallery-4.jpeg";
-import gallery5 from "@/public/tribute/gallery-5.jpeg";
+import gallery4 from "@/public/tribute/gallery-4.jpg";
+import gallery5 from "@/public/tribute/gallery-5.jpg";
 import gallery6 from "@/public/tribute/gallery-6.jpg";
-import gallery7 from "@/public/tribute/gallery-7.jpeg";
-import gallery8 from "@/public/tribute/gallery-8.jpeg";
-import gallery9 from "@/public/tribute/gallery-9.jpeg";
-import gallery10 from "@/public/tribute/gallery-10.jpeg";
+import gallery7 from "@/public/tribute/gallery-7.jpg";
+import gallery8 from "@/public/tribute/gallery-8.jpg";
+import gallery9 from "@/public/tribute/gallery-9.jpg";
+import gallery10 from "@/public/tribute/gallery-10.jpg";
 import featuredImage from "@/public/tribute/anny.jpg";
-import { caption } from "framer-motion/client";
 
 const galleryPhotos = [
   {
     src: gallery1,
     alt: "Book distribution",
-    caption: "Dr. Mutiso with the books ready to be shipped"
+    caption: "Dr. Mutiso with the portion of the books assigned to Kitwii Girls"
   },
   {
     src: gallery2,
     alt: "Book loading process", 
-    caption: "Loading books in the United States"
+    caption: "Packaging books in the United States"
   },
   {
     src: gallery3,
     alt: "Books traveling to Kenya.",
-    caption: "Books on their way to Kenya"
+    caption: "Loading books for Kenya"
   },
   {
-    src: gallery6,
+    src: gallery4,
     alt: "With students",
-    caption: "Unloading books in Kenya."
+    caption: "Books on their way to a United States seaport to be shipped to Kenya"
   },
   {
     src: gallery5,
@@ -41,7 +40,7 @@ const galleryPhotos = [
     caption: "Volunteers unloading books"
   },
   {
-    src: gallery4,
+    src: gallery6,
     alt: "Educational work",
     caption: "Distributing books"
   },
@@ -63,7 +62,7 @@ const galleryPhotos = [
   {
     src: gallery10,
     alt: "Final farewell",
-    caption: "Parents with the books in Kenya"
+    caption: "Parents at the donated books reception event"
   }
 ];
 
