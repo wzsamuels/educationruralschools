@@ -174,7 +174,7 @@ export default function HomePage() {
           </div>
           <div className="flex flex-col items-center">
             <Image src={image1} alt="Support" className="rounded-xl shadow-xl max-w-lg w-full" />
-            <Caption text="The school's principal, Mr. James Kioko, giving a speech during the reception of donated books." />
+            <Caption text="The school's principal, Mr. James Kioko, giving a speech during the reception of donated books in the presence of Dr. Mutiso's parents, Mr. Abraham & Elizabeth Mutiso, Dr. Mutiso's former primary school teachers, parents, teachers, students, clergy, and community leaders. " />
           </div>
         </div>
       </section>
