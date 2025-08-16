@@ -92,14 +92,20 @@ export default function VolunteerPage () {
           <p className="text-xl leading-relaxed opacity-90 mb-8">
             Ready to make a difference? Whether you can volunteer locally or remotely, there's a place for you in our mission to transform education in rural Kenya.
           </p>
+          {/*
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-accent hover:bg-accent/90 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all duration-300 hover:scale-105">
               Become a Volunteer
             </button>
+            {
             <button className="border-2 border-white hover:bg-white hover:text-primary text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105">
               Learn More
             </button>
+            
           </div>
+          
+
+          */}
         </div>
       </section>
     </div>
