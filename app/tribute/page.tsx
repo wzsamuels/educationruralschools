@@ -71,7 +71,7 @@ const galleryPhotos = [
   {
     src: gallery11,
     alt: "Books in storage",
-    caption: "Dr. Mutiso's former primary school teachers: 1st grade teacher, Mrs. John, 3rd grade teacher, and Mrs. Kakindu Nzioki. Also shown is the school's principal at the time, Mr. Ndunda, who presided over the ground breaking event."
+    caption: "Dr. Mutiso's former primary school teachers: 1st grade teacher, Mrs. John, 3rd grade teacher, and Mrs. Kakindu Nzioki. The school's principal at the time, Mr. Ndunda, presided over the ground breaking event."
   },
   {
     src: gallery12,
