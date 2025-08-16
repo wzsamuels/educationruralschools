@@ -109,7 +109,7 @@ export default function TributePage() {
             KERRS Inc., now a registered organization, honors you by continuing the mission you started. This page features photographs of the book loading process in the United States and you overseeing their distribution to various schools, reminding us that our acts of kindness can endure beyond our lifetimes.
           </p>
           <p>
-            And thank you for capturing the images and videos in Kenya, providing us with valuable memories. We are forever grateful for your contributions to the community.
+            Annie, thank you for capturing the images and videos in Kenya, providing us with valuable memories. We are forever grateful for your contributions to the community.
           </p>
           <p>
             May the efforts of the KERRS' leadership team, our volunteers, and our valued donors leave a positive impact, influencing people and the world for the generations to come.
