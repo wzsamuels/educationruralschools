@@ -71,7 +71,7 @@ const galleryPhotos = [
   {
     src: gallery11,
     alt: "Books in storage",
-    caption: "Dr. Mutiso's former primary school teachers: 1st grade teacher, Mrs. John, 3rd grade teacher, and Mrs. Kakindu Nzioki. The school's principal at the time, Mr. Ndunda, presided over the ground breaking event."
+    caption: "Dr. Mutiso's former primary school teachers: 1st grade teacher - Mrs. John, 3rd grade teacher - Mrs. Kakindu Nzioki, and the school’s principal at the time, Mr. Ndunda, who also presided over the library ground breaking event."
   },
   {
     src: gallery12,
@@ -152,9 +152,8 @@ export default function TributePage() {
               srcLang="en"
               label="English"
             />
-            Your browser does not support the video tag.
           </video>
-                </div>
+        </div>
       </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {galleryPhotos.map((photo, index) => (
