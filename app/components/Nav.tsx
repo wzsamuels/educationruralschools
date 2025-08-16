@@ -41,7 +41,7 @@ export default function Nav () {
     <>
       <nav>
         <div className={'h-[75px] bg-primary flex items-center shadow justify-between px-4 lg:px-8 py-2 text-white '}>
-          <div className=" items-center text-lg font-bold">KERRS</div>
+          <div className=" items-center text-lg font-bold"><Link href="/">KERRS</Link></div>
           <div className={'hidden flex-1 md:flex justify-center items-center text-sm lg:text-base'}>
             { links.map((link) =>
               <Link
