@@ -22,7 +22,7 @@ const team = [
   },
   {
     name: "Joshua Towet",
-    role: "Vice President",
+    role: "Vice President & Financial Advisory Volunteer",
     image: joshuaImage,
     text: "Joshua is a financial counselor with a Bachelor of Science in Finance and Accounting from Maseno University in Kenya."
   },
