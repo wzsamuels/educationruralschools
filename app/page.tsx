@@ -134,7 +134,7 @@ export default function HomePage() {
           </p>
         </div>
         <div className="flex flex-1 flex-col items-center md:items-start">
-          <h3 className="text-xl font-semibold text-primary text-center mb-4">Donated Books Reception Event, September 2017</h3>
+          <h3 className="text-xl font-semibold text-primary text-center mb-4">Donated Books Reception Event</h3>
           <Image src={image1} alt="Support" className="rounded-xl shadow-xl max-w-lg w-full" />
           <Caption className="max-w-lg" text="The Saint Martin's Kitwii Primary School's principal, Mr. James Kioko, giving a speech during the reception of donated books in the presence of Dr. Mutiso's parents - Mr. Abraham & Elizabeth Mutiso, Dr. Mutiso's former primary school teachers, parents, teachers, students, clergy, and community leaders. " />        
         </div>

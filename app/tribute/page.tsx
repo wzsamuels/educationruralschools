@@ -21,7 +21,7 @@ const galleryPhotos = [
   {
     src: gallery1,
     alt: "Book distribution",
-    caption: "Dr. Mutiso with the portion of the books assigned to Kitwii Girls (2017)"
+    caption: "Dr. Mutiso with the portion of the books assigned to Kitwii Girls"
   },
   {
     src: gallery2,
